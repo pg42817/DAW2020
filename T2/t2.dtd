@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT work_report (name,header,workteam,abstract,deliverables)>
+<!ELEMENT  name (#PCDATA)>
+
+<!ELEMENT  header (key,title,subtitle,begin_date,end_date,supervisor) >
+<!ELEMENT key (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT begin_date (#PCDATA)>
+<!ELEMENT end_date (#PCDATA)>
+<!ELEMENT supervisor (supervisor_name,supervisor_link)>
+<!ELEMENT supervisor_name (#PCDATA)>
+<!ELEMENT supervisor_link (#PCDATA)>
+
+<!ELEMENT workteam (element+)>
+<!ELEMENT element (student_name,number,mail)>
+<!ELEMENT student_name (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+
+<!ELEMENT abstract (paragraph+)>
+<!ELEMENT paragraph (#PCDATA|bold|italic)*>
+<!ELEMENT bold (#PCDATA)>
+<!ELEMENT italic (#PCDATA)>
+
+<!ELEMENT deliverables (deliverable+)>
+<!ELEMENT deliverable (deliverable_name,deliverable_link) >
+<!ELEMENT deliverable_name (#PCDATA) >
+<!ELEMENT deliverable_link (#PCDATA) >
