@@ -20,9 +20,11 @@
 <!ELEMENT mail (#PCDATA)>
 
 <!ELEMENT abstract (paragraph+)>
-<!ELEMENT paragraph (#PCDATA|bold|italic)*>
+<!ELEMENT paragraph (#PCDATA|bold|italic|link_name|link)*>
 <!ELEMENT bold (#PCDATA)>
 <!ELEMENT italic (#PCDATA)>
+<!ELEMENT link_name (#PCDATA)>
+<!ELEMENT link (#PCDATA) >
 
 <!ELEMENT deliverables (deliverable+)>
 <!ELEMENT deliverable (deliverable_name,deliverable_link) >
