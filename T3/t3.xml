@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE work_report SYSTEM "t2.dtd">
+<work_report>
+    <name>Relatório de Trabalho</name>
+    <header>
+        <key>DAW::2020</key>
+        <title>DTD para relatórios de trabaho</title>
+        <subtitle>Relatórios inseridos na cadeira de DAW 2020/21</subtitle>
+        <begin_date>Outubro 2020</begin_date>
+        <end_date>Outubro 2020</end_date>
+        <supervisor>
+            <supervisor_name>José Carlos Ramalho</supervisor_name>
+            <supervisor_link>http://www4.di.uminho.pt/~jcr/</supervisor_link>
+        </supervisor>
+    </header>
+    <workteam>
+        <element>
+            <student_name>Carlos Magalhães</student_name>
+            <number>PG42817</number>
+            <mail>pg42817@alunos.uminho.pt</mail>
+        </element>
+    </workteam>
+    <abstract>
+        <paragraph>
+           Neste trabalho desenvolvi um  <bold>DTD</bold> de forma a facilitar a realização de um relatório para os trabalhos de casa realizados
+        </paragraph>
+    </abstract>
+    <deliverables>
+        <deliverable>
+            <deliverable_name>DTD Document Type Definition</deliverable_name>
+            <deliverable_link>https://github.com/pg4817/DAW2020/blob/master/T2/t2.dtd</deliverable_link>
+        </deliverable>
+    </deliverables>
+</work_report>
