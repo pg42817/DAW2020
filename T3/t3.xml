@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE work_report SYSTEM "t2.dtd">
+<!DOCTYPE work_report SYSTEM "../T2/t2.dtd">
 <work_report>
     <name>Relatório de Trabalho</name>
     <header>
         <key>DAW::2020</key>
-        <title>DTD para relatórios de trabaho</title>
+        <title>DTD e stylesheet XSLT que gere um website para o data set dos arqueossítios do NW português.</title>
         <subtitle>Relatórios inseridos na cadeira de DAW 2020/21</subtitle>
-        <begin_date>Outubro 2020</begin_date>
-        <end_date>Outubro 2020</end_date>
+        <begin_date>Novembro 2020</begin_date>
+        <end_date>Novembro 2020</end_date>
         <supervisor>
             <supervisor_name>José Carlos Ramalho</supervisor_name>
             <supervisor_link>http://www4.di.uminho.pt/~jcr/</supervisor_link>
@@ -22,13 +22,24 @@
     </workteam>
     <abstract>
         <paragraph>
-           Neste trabalho desenvolvi um  <bold>DTD</bold> de forma a facilitar a realização de um relatório para os trabalhos de casa realizados
+            Neste trabalho desenvolvi um  <bold>DTD</bold> que permite gerar xml igual ao dado, para registo de arqueossítios do NW português.
+        </paragraph>
+        <paragraph>
+            Desenvolvi também uma <bold>stylesheet XSLT</bold> que gere um website para o mesmo data set.
         </paragraph>
     </abstract>
     <deliverables>
         <deliverable>
             <deliverable_name>DTD Document Type Definition</deliverable_name>
-            <deliverable_link>https://github.com/pg4817/DAW2020/blob/master/T2/t2.dtd</deliverable_link>
+            <deliverable_link>https://github.com/pg4817/DAW2020/blob/master/T3/arq.dtd</deliverable_link>
+        </deliverable>
+        <deliverable>
+            <deliverable_name>Stylesheet XSLT</deliverable_name>            
+            <deliverable_link>https://github.com/pg4817/DAW2020/blob/master/T3/arqsite.xsl</deliverable_link>
+        </deliverable>
+        <deliverable>
+            <deliverable_name>Site gerado através do XSLT</deliverable_name>
+            <deliverable_link>https://github.com/pg4817/DAW2020/blob/master/T3/site.html</deliverable_link>
         </deliverable>
     </deliverables>
 </work_report>
