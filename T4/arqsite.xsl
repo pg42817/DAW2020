@@ -30,10 +30,10 @@
     
     <!-- Templates de índicie .....................................-->
     <xsl:template match="ARQELEM" mode="indice">
-
+        
         <li>
-            <a name="i{generate-id()}"/>
-            <a href="{generate-id()}.html">
+            <a name="i{position()}"/>
+            <a href="arq{position()}.html">
                 <xsl:value-of select="IDENTI"/>    
             </a>
         </li>
@@ -42,9 +42,9 @@
     
     <!-- Templates para o conteudo .....................................-->
     <xsl:template match="ARQELEM"> 
-       
-        <xsl:result-document href="site/{generate-id()}.html">
-          
+        
+        <xsl:result-document href="site/arq{position()}.html">
+            
             <html>
                 <head>
                     <title><xsl:value-of select="IDENTI"/></title>
@@ -75,8 +75,14 @@
                     <xsl:if test="AUTOR"><p><b>Autor:</b><xsl:value-of select="AUTOR"/></p></xsl:if>
                     <xsl:if test="DATA"><p><b>Data:</b><xsl:value-of select="DATA"/></p></xsl:if> 
                     <address>
-                        [<a href="index.html#i{generate-id()}">Voltar à Home</a>]
-                    </address>           
+                        [<a href="{position()-1}">Anterior</a>]
+                    </address> 
+                    <address>
+                        [<a href="index.html#i{position()}">Voltar à Home</a>]
+                    </address> 
+                    <address>
+                        [<a href="{position()+1}">Próximo</a>]
+                    </address> 
                 </body>
             </html>
         </xsl:result-document>
