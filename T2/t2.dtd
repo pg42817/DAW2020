@@ -10,7 +10,7 @@
 <!ELEMENT edate (#PCDATA)>
 <!ELEMENT supervisor (#PCDATA)>
 <!ATTLIST supervisor
-    urL CDATA #IMPLIED>
+    url CDATA #IMPLIED>
 
 <!ELEMENT team (member+)>
 <!ELEMENT member (name,email,link?)>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../T2/t2.dtd">
+<pr>
+    <meta>
+        <key>DAW::2020</key>
+        <title>Servidor Node.js para Arqueositios</title>
+        <bdate>Novembro 2020</bdate>
+        <edate>Novembro 2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="pg42817">
+            <name>Carlos Magalhães</name>
+            <email>pg42817@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Foi criado um server em <b>Node.js</b> para o site criado no tpc anterior. Este servidor recebe os pedidos para aceder a uma certa página do website</p>
+        <p>Foi necessário a alteração do modo como o site era gerado nomeadamente no nome das páginas de cada sitio, os seus ids e ligação ao index.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/pg42817/DAW2020/tree/master/T4/site">Pasta com as páginas do website</link>
+        <link url="https://github.com/pg42817/DAW2020/blob/master/T4/arq.xml">XML utilizado</link>
+        <link url="https://github.com/pg42817/DAW2020/blob/master/T4/arqsite.xsl">Ficheiro XSLT</link>
+        <link url="https://github.com/pg42817/DAW2020/blob/master/T4/mymod.js">Ficheiro auxiliar com funções para o servidor</link>
+        <link url="https://github.com/pg42817/DAW2020/blob/master/T4/server.js">Servidor Node.js</link>
+    </deliverables>
+</pr>
