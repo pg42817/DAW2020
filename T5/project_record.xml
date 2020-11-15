@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../T2/t2.dtd">
+<pr>
+    <meta>
+        <key>DAW::2020</key>
+        <title>Criação de um Server em Node.js para servir conteúdo a partir de uma REST API</title>
+        <bdate>Novembro 2020</bdate>
+        <edate>Novembro 2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="pg42817">
+            <name>Carlos Magalhães</name>
+            <email>pg42817@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Foi criado um server em <b>Node.js</b> para fazer pedidos a uma API REST do dataset fornecido da escola de música.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/pg42817/DAW2020/tree/master/T5/db.json">Dataset fornecido</link>
+        <link url="https://github.com/pg42817/DAW2020/blob/master/T5/tpc5.js">Servidor em Node.js criado</link>
+    </deliverables>
+</pr>
