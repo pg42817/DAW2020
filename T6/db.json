@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "dateDued": "2020-11-25",
+      "who": "Carlos",
+      "what": "Inicializar Atividades",
+      "type": "Teste",
+      "status": "To Do",
+      "dateCreated": "2020-11-24",
+      "id": 1
+    },
+    {
+      "dateDued": "2020-11-25",
+      "who": "Carlos",
+      "what": "Testar uma atividade que já foi finalizada",
+      "type": "Teste",
+      "status": "Done",
+      "dateCreated": "2020-11-24",
+      "id": 2
+    }
+  ]
+}
