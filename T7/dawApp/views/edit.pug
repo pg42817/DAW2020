@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Edit Student
+      .w3-container.w3-center
+        form(class="w3-container" action="/students", method="POST")
+            input(type="hidden" name="_method" value="put")
+            label(class="w3-text-teal w3-left") <strong>Name</strong>
+            input(class="w3-input w3-border w3-light-grey" type="text" name="nome" value=info.nome)
+            label(class="w3-text-teal w3-left") <strong>Number</strong>
+            input(class="w3-input w3-border w3-light-grey" type="text" name="numero" value=info.numero readonly)
+            label(class="w3-text-teal w3-left") <strong>Git</strong>
+            input(class="w3-input w3-border w3-light-grey" type="text" name="git" value=info.git)
+            br
+            input(class="w3-left" type="hidden" id="tpc1" name="tpcs" value=info.tpc[0])
+            br
+            input(class="w3-left" type="hidden" id="tpc2" name="tpcs" value=info.tpc[1])
+            br
+            input(class="w3-left" type="hidden" id="tpc3" name="tpcs" value=info.tpc[2])
+            br
+            input(class="w3-left" type="hidden" id="tpc4" name="tpcs" value=info.tpc[3])
+            br
+            input(class="w3-left" type="hidden" id="tpc5" name="tpcs" value=info.tpc[4])
+
+            br
+            input(class="w3-left" type="hidden" id="tpc6" name="tpcs" value=info.tpc[5])
+
+            br
+            input(class="w3-left" type="hidden" id="tpc7" name="tpcs" value=info.tpc[6])
+
+            br
+            input(class="w3-left" type="hidden" id="tpc8" name="tpcs" value=info.tpc[7])  
+
+            br
+            input(class="w3-btn w3-blue-grey" type="submit" value="Save Changes")
+                
+    footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, cmmag
+
+
+
+        

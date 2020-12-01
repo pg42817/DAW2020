@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Student #{info.numero}
+      if info !=null
+        .w3-container 
+            p <strong>Name:</strong>#{info.nome}
+            p <strong>Number:</strong> #{info.numero}
+            p <strong>Git:</strong> 
+                a(href=info.git) #{info.git}
+            p <strong>Homework:</strong> 
+            table.w3-table-all
+                tr
+                    th 1
+                    th 2
+                    th 3
+                    th 4
+                    th 5
+                    th 6
+                    th 7
+                    th 8
+                tr
+                    each t in info.tpc
+                        if t==1
+                            td="Done"
+                        else
+                            td="Not Done"
+            a(class='w3-button w3-teal w3-border w3-border-white' href='/students') Voltar
+      else
+        .w3-container
+            p No Student found
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, cmmag
+
+  

@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Students List (DAW2020)
+      if list.length > 0
+        .w3-container 
+          table.w3-table-all
+            tr 
+              th 
+              th Name
+              th Git
+            each s in list
+              tr
+                td 
+                  a(href='/students/' + s.numero) #{s.numero}
+                td= s.nome
+                td= s.git
+                td
+                  a(class='w3-button w3-yellow w3-border w3-border-white' href='/students/edit/'+s.numero) Edit
+                  a(class='w3-button w3-red w3-border w3-border-white' href='/students/delete/'+s.numero) Delete
+      else
+        .w3-container
+          p There are no students...
+      a(class='w3-button w3-green w3-border w3-border-white' href='/students/register') Register Student
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, cmmag
+
+  

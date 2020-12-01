@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../T2/t2.dtd">
+<pr>
+    <meta>
+        <key>DAW::2020</key>
+        <title>Criação de um servidor para servir conteúdo guardado numa MongoDB</title>
+        <bdate>Novembro 2020</bdate>
+        <edate>Novembro 2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="pg42817">
+            <name>Carlos Magalhães</name>
+            <email>pg42817@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Neste trabalho foi criado um servidor em <b>Express.js</b> que se liga a uma MongoDB e faz as operações de crud necessárias para apresentar 
+        na página web a informação desejada.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/pg42817/DAW2020/tree/master/T7/dawApp">Servidor</link>
+    </deliverables>
+</pr>

@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Register Student Form
+      .w3-container.w3-center
+        form(class="w3-container" action="/students", method="POST")
+                label(class="w3-text-teal w3-left") <strong>Name</strong>
+                input(class="w3-input w3-border w3-light-grey" type="text" name="nome")
+                label(class="w3-text-teal w3-left") <strong>Number</strong>
+                input(class="w3-input w3-border w3-light-grey" type="text" name="numero")
+                label(class="w3-text-teal w3-left") <strong>Git</strong>
+                input(class="w3-input w3-border w3-light-grey" type="text" name="git")
+                br
+                input(class="w3-left" type="checkbox" id="tpc1" name="tpcs" value="1")
+                label(class="w3-left w3-text-teal " for="tpc1" ) Homework 1
+                br
+                input(class="w3-left" type="checkbox" id="tpc2" name="tpcs" value="2")
+                label(class="w3-left w3-text-teal " for="tpc2" ) Homework 2
+                br
+                input(class="w3-left" type="checkbox" id="tpc3" name="tpcs" value="3")
+                label(class="w3-left w3-text-teal " for="tpc3" ) Homework 3
+                br
+                input(class="w3-left" type="checkbox" id="tpc4" name="tpcs" value="4")
+                label(class="w3-left w3-text-teal " for="tpc4" ) Homework 4
+                br
+                input(class="w3-left" type="checkbox" id="tpc5" name="tpcs" value="5")
+                label(class="w3-left w3-text-teal " for="tpc5" ) Homework 5
+                br
+                input(class="w3-left" type="checkbox" id="tpc6" name="tpcs" value="6")
+                label(class="w3-left w3-text-teal " for="tpc6" ) Homework 6
+                br
+                input(class="w3-left" type="checkbox" id="tpc7" name="tpcs" value="7")
+                label(class="w3-left w3-text-teal " for="tpc7" ) Homework 7
+                br
+                input(class="w3-left" type="checkbox" id="tpc8" name="tpcs" value="8")
+                label(class="w3-left w3-text-teal " for="tpc8" ) Homework 8
+                br
+                input(class="w3-btn w3-blue-grey" type="submit" name="Register" value="Register")
+                input(class="w3-btn w3-blue-grey" type="reset" name="Reset" value="Reset")
+    footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, cmmag
+
+
+
+        
